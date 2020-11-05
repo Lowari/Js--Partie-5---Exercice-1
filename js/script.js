@@ -1,9 +1,8 @@
 var button = document.querySelector("#button-pass");
 var pass = document.querySelector("#pass");
-var confirm = document.querySelector("#confirm-pass");
+var confirm = document.querySelector("#confirmPass");
 
-button.addEventListener('click', function(e) {
-    let value = e.target.value;
+button.addEventListener('click', function() {
     if (pass.value === confirm.value) {
         pass.style.borderColor = "green";
         confirm.style.borderColor ="green";
